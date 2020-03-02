@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  "MathJax Example"
-date:   2015-08-10
+title:  "ELBO Factorization"
+date:   2020-03-02
 excerpt: "MathJax Example for Moon Jekyll Theme."
 tag:
-- markdown 
-- mathjax
-- example
-- test
-- jekyll
+- variationalbayes 
+- math
 comments: true
 ---
 
