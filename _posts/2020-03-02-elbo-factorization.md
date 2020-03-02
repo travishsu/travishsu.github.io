@@ -16,10 +16,10 @@ By Baye's rule
 thus,
 \\[ \ln p(X)=\ln \frac{p(X,Z)}{q(Z)} + \ln \frac{q(Z)}{p(Z|X)} \\]
 
-From EM algorithm, we can decompose the log marginal probability using \\[ \ln p(X)=\mathcal{L}(q) + KL(q\|p \\] where
+From EM algorithm, we can decompose the log marginal probability using \\[ \ln p(X)=\mathcal{L}(q) + KL(q\|p) \\] where
 
 - \\( \mathcal{L}(q)=\int q(Z)\ln\frac{p(X,Z)}{q(Z)}\mathrm{d} Z=E_q\{\ln\frac{p(X,Z)}{q(Z)}\} \\)
-- \\( KL(q\|p)=\int q(Z)\ln\frac{q(Z)}{p(Z|X)}\mathrm{d} Z=E_q\{\ln\frac{q(Z)}{p(Z|X)}\ \\)
+- \\( KL(q\|p)=\int q(Z)\ln\frac{q(Z)}{p(Z|X)}\mathrm{d} Z=E_q\{\ln\frac{q(Z)}{p(Z|X)}\} \\)
 
 The objective of Variantional Inference (VI) is to maximize the Evidence Lower Bound (i.e. \\( \mathcal{L}(q) \\)) with respect to \\( q \\), which is equivalent to minimize the KL-divergence because \\( \ln(X) \\) shall be constant regardless of any \\( q \\).
 
